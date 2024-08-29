@@ -9,7 +9,7 @@ function activate(context) {
         const serverOptions = {
             command: "fix",
             args: [
-                "--language-server"
+                "language-server"
             ]
         };
         const clientOptions = {

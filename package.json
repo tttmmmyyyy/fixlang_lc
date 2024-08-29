@@ -9,7 +9,7 @@
     },
     "main": "./extension.js",
     "activationEvents": [
-        "onLanguage:oreore"
+        "onLanguage:fixlang"
     ],
     "contributes": {
         "languages": [
