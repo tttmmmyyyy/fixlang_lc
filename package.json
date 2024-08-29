@@ -1,0 +1,28 @@
+{
+    "name": "fixlang-mode",
+    "version": "0.0.1",
+    "author": "tttmmmyyyy",
+    "license": "MIT",
+    "description": "A language server client for fixlang",
+    "engines": {
+        "vscode": "^1.75.0"
+    },
+    "main": "./extension.js",
+    "activationEvents": [
+        "onLanguage:oreore"
+    ],
+    "contributes": {
+        "languages": [
+            {
+                "id": "fixlang",
+                "extensions": [
+                    ".fix"
+                ]
+            }
+        ]
+    },
+    "dependencies": {
+        "vscode-languageclient": "^7.0.0"
+    },
+    "private": true
+}
