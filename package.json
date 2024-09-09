@@ -1,17 +1,18 @@
 {
     "name": "fixlang-language-client",
     "displayName": "Fix-lang language client",
+    "description": "The client of language server protocol for fixlang",
     "version": "0.0.1",
+    "publisher": "tttmmmyyyy",
     "license": "MIT",
-    "description": "A language server client for fixlang",
+    "categories": [
+        "Programming Languages"
+    ],
     "repository": {
         "type": "git",
         "url": "https://github.com/tttmmmyyyy/fixlang_lc.git"
     },
     "icon": "icon.png",
-    "categories": [
-        "Programming Languages"
-    ],
     "engines": {
         "vscode": "^1.92.0"
     },
@@ -38,6 +39,5 @@
     },
     "dependencies": {
         "vscode-languageclient": "^9.0.1"
-    },
-    "publisher": "tttmmmyyyy"
+    }
 }
