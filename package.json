@@ -4,6 +4,7 @@
     "author": "tttmmmyyyy",
     "license": "MIT",
     "description": "A language server client for fixlang",
+    "icon": "icon.png",
     "engines": {
         "vscode": "^1.92.0"
     },
