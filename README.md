@@ -4,4 +4,4 @@ The client of language server protocol for [Fix lang](https://github.com/tttmmmy
 
 # Marketplace
 
-TODO
+https://marketplace.visualstudio.com/items?itemName=tttmmmyyyy.fixlang-language-client
