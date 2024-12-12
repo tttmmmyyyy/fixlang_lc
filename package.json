@@ -2,7 +2,7 @@
     "name": "fixlang-language-client",
     "displayName": "Fix-lang language client",
     "description": "The client of language server protocol for fixlang",
-    "version": "0.1.0",
+    "version": "0.2.0",
     "publisher": "tttmmmyyyy",
     "license": "MIT",
     "categories": [
@@ -32,7 +32,17 @@
                     ".fix"
                 ]
             }
-        ]
+        ],
+        "configuration": {
+            "title": "Fix-lang language client settings",
+            "properties": {
+                "fixLanguageClient.compilerCommand": {
+                    "type": "string",
+                    "default": "fix",
+                    "description": "Command to launch the compiler."
+                }
+            }
+        }
     },
     "dependencies": {
         "vscode-languageclient": "^9.0.1"

@@ -6,8 +6,9 @@ let client;
 
 function activate(context) {
     try {
+        const compierCommand = vscode.workspace.getConfiguration('fixLanguageClient').get('compilerCommand');;
         const serverOptions = {
-            command: "fix",
+            command: compierCommand,
             args: [
                 "language-server"
             ]
@@ -23,7 +24,7 @@ function activate(context) {
         client = new languageclient.LanguageClient("fixlang-mode", serverOptions, clientOptions);
         context.subscriptions.push(client.start());
     } catch (e) {
-        vscode.window.showErrorMessage("fixlang-mode couldn't be started.");
+        vscode.window.showErrorMessage(`fixlang-mode couldn't be started: ${e.message}`);
     }
 }
 
