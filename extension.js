@@ -6,7 +6,7 @@ let client;
 
 function activate(context) {
     try {
-        const compierCommand = vscode.workspace.getConfiguration('fixLanguageClient').get('compilerCommand');;
+        const compierCommand = vscode.workspace.getConfiguration('fixlang').get('compilerCommand');
         const serverOptions = {
             command: compierCommand,
             args: [

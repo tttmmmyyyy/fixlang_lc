@@ -1,8 +1,8 @@
 {
-    "name": "fixlang-language-client",
-    "displayName": "Fix-lang language client",
-    "description": "The client of language server protocol for fixlang",
-    "version": "0.2.0",
+    "name": "fixlang",
+    "displayName": "Fix-lang",
+    "description": "Fix-lang support for VSCode",
+    "version": "0.3.0",
     "publisher": "tttmmmyyyy",
     "license": "MIT",
     "categories": [
@@ -17,9 +17,6 @@
         "vscode": "^1.92.0"
     },
     "main": "./extension.js",
-    "activationEvents": [
-        "onLanguage:fixlang"
-    ],
     "contributes": {
         "languages": [
             {
@@ -30,13 +27,21 @@
                 ],
                 "extensions": [
                     ".fix"
-                ]
+                ],
+                "configuration": "./language-configuration.json"
+            }
+        ],
+        "grammars": [
+            {
+                "language": "fixlang",
+                "scopeName": "source.fix",
+                "path": "./syntaxes/fixlang.tmLanguage.json"
             }
         ],
         "configuration": {
-            "title": "Fix-lang language client settings",
+            "title": "Fix-lang",
             "properties": {
-                "fixLanguageClient.compilerCommand": {
+                "fixlang.compilerCommand": {
                     "type": "string",
                     "default": "fix",
                     "description": "Command to launch the compiler."
