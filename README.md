@@ -1,15 +1,7 @@
-# Fix-lang
+# Fix language client
 
-VSCode extension for [Fix lang](https://github.com/tttmmmyyyy/fixlang).
-Provides syntax highlighting, a language server client, and other editor integrations.
+The client of language server protocol for [Fix lang](https://github.com/tttmmmyyyy/fixlang) in VSCode.
 
 # Marketplace
 
-https://marketplace.visualstudio.com/items?itemName=tttmmmyyyy.fixlang
-
-# History
-
-This extension supersedes the previous two extensions, which are now deprecated:
-
-- `tttmmmyyyy.fixlangsyntax` (syntax highlighting)
-- `tttmmmyyyy.fixlang-language-client` (language server client)
+https://marketplace.visualstudio.com/items?itemName=tttmmmyyyy.fixlang-language-client
