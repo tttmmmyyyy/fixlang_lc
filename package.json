@@ -2,7 +2,7 @@
     "name": "fixlang-language-client",
     "displayName": "Fix-lang language client",
     "description": "The client of language server protocol for fixlang",
-    "version": "0.2.0",
+    "version": "0.3.0",
     "publisher": "tttmmmyyyy",
     "license": "MIT",
     "categories": [
@@ -30,7 +30,8 @@
                 ],
                 "extensions": [
                     ".fix"
-                ]
+                ],
+                "configuration": "./language-configuration.json"
             }
         ],
         "configuration": {
