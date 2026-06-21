@@ -41,6 +41,17 @@
                     "type": "string",
                     "default": "fix",
                     "description": "Command to launch the compiler."
+                },
+                "fix.analyze.delayMs": {
+                    "type": "number",
+                    "default": 400,
+                    "minimum": 0,
+                    "description": "How long (in milliseconds) the language server waits for typing to pause before re-analyzing (diagnostics). 0 disables on-type analysis (it then runs only on save and on initial load)."
+                },
+                "fix.analyze.onSave": {
+                    "type": "boolean",
+                    "default": true,
+                    "description": "Whether saving a file also triggers analysis (diagnostics)."
                 }
             }
         }

@@ -20,6 +20,13 @@ function activate(context) {
                     language: "fixlang",
                 }
             ],
+            // Forward the `fix.*` settings (e.g. fix.analyze.delayMs,
+            // fix.analyze.onSave) to the server via
+            // workspace/didChangeConfiguration, and re-send them whenever
+            // the user changes them.
+            synchronize: {
+                configurationSection: "fix",
+            },
         };
         client = new languageclient.LanguageClient("fixlang-mode", serverOptions, clientOptions);
         context.subscriptions.push(client.start());
